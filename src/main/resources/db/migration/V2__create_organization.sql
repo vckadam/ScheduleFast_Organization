@@ -1,0 +1,6 @@
+CREATE TABLE organization(
+	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	name VARCHAR(191),
+	description VARCHAR(191)
+);
+	

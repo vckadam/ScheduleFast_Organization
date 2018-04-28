@@ -63,6 +63,11 @@
 		    <artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
         
+        <dependency>
+		    <groupId>org.flywaydb</groupId>
+		    <artifactId>flyway-core</artifactId>
+		    <version>5.0.7</version>
+		</dependency>
         
 	</dependencies>
 
