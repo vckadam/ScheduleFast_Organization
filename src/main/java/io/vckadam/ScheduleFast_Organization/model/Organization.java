@@ -1,17 +1,28 @@
 package io.vckadam.ScheduleFast_Organization.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Organization {
-	private int organization_id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
 	private String name, description;
+	
+	public Organization() { }
+	
 	public Organization(String name, String description) {
 		this.name = name;
 		this.description = description;
 	}
-	public int getOrganization_id() {
-		return organization_id;
+	public Long getOrganization_id() {
+		return id;
 	}
-	public void setOrganization_id(int organization_id) {
-		this.organization_id = organization_id;
+	public void setOrganization_id(Long id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
