@@ -18,10 +18,10 @@ public class Organization {
 		this.name = name;
 		this.description = description;
 	}
-	public Long getOrganization_id() {
+	public Long getId() {
 		return id;
 	}
-	public void setOrganization_id(Long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
