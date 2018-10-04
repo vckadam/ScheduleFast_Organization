@@ -12,11 +12,14 @@ public class Organization {
 	private Long id;
 	private String name, description;
 	
+	private int groupCount;
+	
 	public Organization() { }
 	
-	public Organization(String name, String description) {
+	public Organization(String name, String description, int groupCount) {
 		this.name = name;
 		this.description = description;
+		this.groupCount = groupCount;
 	}
 	public Long getId() {
 		return id;
@@ -35,6 +38,14 @@ public class Organization {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public int getGroupCount() {
+		return groupCount;
+	}
+
+	public void setGroupCount(int groupCount) {
+		this.groupCount = groupCount;
 	}
 	
 }
